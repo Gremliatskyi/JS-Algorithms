@@ -1,0 +1,11 @@
+<script>
+  function showAllFiles(folderName)
+  {
+    let folders = getFolders(folderName);
+    for(let i = 0; i < folders.lenght; i++)
+    {
+        showAllFiles(folders[i]);
+    }
+    printFileNames(folderName);
+}
+</script>
